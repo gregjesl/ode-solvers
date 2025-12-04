@@ -191,6 +191,13 @@ where
         }
     }
 
+    /// Sets the output type
+    /// 
+    /// See [`OutputType`] for more details.
+    pub fn set_output(&mut self, out_type: OutputType) {
+        self.out_type = out_type;
+    }
+
     /// Computes the initial step size.
     fn hinit(&self) -> T {
         let (rows, cols) = self.y.shape_generic();
@@ -538,7 +545,7 @@ where
                 }
             }
         } else {
-            self.results.push(self.x0, y_next.clone());
+            self.results.push(self.x, y_next.clone());
         }
     }
 
