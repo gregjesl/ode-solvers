@@ -538,7 +538,7 @@ where
                 }
             }
         } else {
-            self.results.push(self.x0, y_next.clone());
+            self.results.push(self.x, y_next.clone());
         }
     }
 
