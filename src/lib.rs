@@ -22,3 +22,4 @@ pub use dopri5::Dopri5;
 pub use rk4::Rk4;
 
 pub use dop_shared::System;
+pub use dop_shared::OutputType;
